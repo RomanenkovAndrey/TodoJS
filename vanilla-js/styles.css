@@ -1,0 +1,100 @@
+body {
+	background: linear-gradient(90deg, #b9deed, #efefef);
+}
+
+.app-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.todo-list-elem {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+
+    max-width: 330px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-image: linear-gradient(-180deg , #EBEBEB 0%, #DCDDDF 48%, #C4C5C7 99%);
+    box-shadow: 0 16px 28px 0 rgb(0 0 0 / 22%), 0 25px 55px 0 rgb(0 0 0 / 21%);
+}
+
+.todo-text-area {
+    background-color: transparent;
+    border: none;
+}
+
+.todo-text-area.editing {
+    border: none;
+    border-bottom: 1px solid blue;
+    outline: none;
+}
+
+.fa {
+    padding: 0 4px;
+}
+
+.fa:hover {
+    cursor: pointer;
+}
+
+.fa-edit, .fa-check {
+    color: green;
+}
+
+.fa-trash-alt, .fa-times {
+    color: red;
+}
+
+input#add-todo-button {
+    position: relative;
+    display: inline-block;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 0.7em 1.4em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+     linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+     linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+     linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+  }
+  input#add-todo-button:hover {
+    transition: .5s linear;
+    cursor: pointer;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  }
+  input#add-todo-button:active {
+    top: 1px;
+  }
+
+  input#todo-input {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #ffffff !important;
+    outline: none;
+    height: 24px;
+    width: 150px;
+    padding: 8px;
+    margin-right: 20px;
+ }
